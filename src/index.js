@@ -6,7 +6,12 @@ import registerServiceWorker from './serviceWorker';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { Routes } from './routes';
 import { theme } from './styles/custom-theme-style';
+import netlifyIdentity from 'netlify-identity-widget';
 import './index.css';
+
+window.netlifyIdentity = netlifyIdentity;
+// You must run this once before trying to interact with the widget
+netlifyIdentity.init();
 
 const customTheme = createMuiTheme(theme);
 

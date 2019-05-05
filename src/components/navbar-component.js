@@ -52,7 +52,7 @@ const NavBar = () => {
       <AppBar position="absolute" className={classes.appBar}>
         <Toolbar>
           <div onClick={() => history.push('/')} className={classes.title}>
-            Git Lyrics
+            WeWork Brokers
           </div>
           <IconButton
             className={classes.settingsButton}
